@@ -9,8 +9,17 @@ export default class Filter extends React.Component {
       <div>
         <label>
           <input
+            type="text"
+            onChange={event => {
+              this.props.nameFilterChange(event.target.value);
+            }}
+          />
+          Filter
+        </label>
+        <label>
+          <input
             type="checkbox"
-            onClick={this.props.onChange}
+            onChange={this.props.toggleInStock}
             checked={this.props.showInStock}
           />
           Show only in stock items
