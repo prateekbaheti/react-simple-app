@@ -8,7 +8,11 @@ export default class Filter extends React.Component {
     return (
       <div>
         <label>
-          <input type="checkbox" checked={this.props.showInStock} />
+          <input
+            type="checkbox"
+            onClick={this.props.onChange}
+            checked={this.props.showInStock}
+          />
           Show only in stock items
         </label>
       </div>
