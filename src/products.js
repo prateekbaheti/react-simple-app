@@ -27,7 +27,6 @@ export default class Products extends Component {
   }
 
   nameFilterChange(text) {
-    console.log("updating to", text);
     this.setState({ nameFilter: text.trim() });
   }
 
